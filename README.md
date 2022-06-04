@@ -11,3 +11,4 @@
 - gradle을 사용하여 JAVA application 환경 구성
 - git hub에 연동
 - domain과 handler 구성
+- git hub에 push
