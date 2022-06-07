@@ -15,6 +15,7 @@
 
 ### Day-2
 
-- 차량 종류 구분(경차, 승용차, SUV, 전기차, 수소차)
-- 차량 종류별 가격 분류
+- Car class 구성 추가
+- Member class 구성
+- Date type -> Time type으로 변경
 
