@@ -12,3 +12,9 @@
 - git hub에 연동
 - domain과 handler 구성
 - git hub에 push
+
+### Day-2
+
+- 차량 종류 구분(경차, 승용차, SUV, 전기차, 수소차)
+- 차량 종류별 가격 분류
+

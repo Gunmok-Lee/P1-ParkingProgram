@@ -1,55 +1,48 @@
 package P1.ParkingProgram.domain;
 
-import java.sql.Time;
-//이전 교육생 때는 DATE 클래스를 사용하였으나 현재는 주로 TIME 클래스를 사용한다고 한다.
+import java.time.*;
+// 이전 교육생 때는 DATE 클래스를 사용하였으나 현재는 주로 TIME 클래스를 사용한다고 한다.
+// 주차시간으로 날짜와 시간 모두 출력이 필요하므로 LocalDateTime을 이용한다.
 
 public class Car {
     private String carNo; // 차량번호
+    private int carType; // 차량종류 1.경차 2.승용차 3.SUV 4.전기차 5.수소차(데이터를 최소화 하기 위해 int로 저장한다.)
     private int parkedLocation; // 주차구역
-    private Time inTime; // 입차시간
-    private Time outTime; // 출차시간
+    private LocalDateTime inTime; // 입차시간
+    private LocalDateTime outTime; // 출차시간
+
+    LocalDateTime now = LocalDateTime.now();
+    // LocalDateTime을 이용하여 날짜와 시간 모두를 가져온다.
   
-    public int getCarNo() {
+    public String getCarNo() {
       return carNo;
     }
-    public void setCarNo(int carNo) {
-      this.carNo = carNo;
+    public int getCarType() {
+      return carType;
     }
-    public String getParkedLocation() {
+    public int getParkedLocation() {
       return parkedLocation;
     }
-    public void setInTime(Time inTime) {
-      this.inTime = inTime;
+    public LocalDateTime getInTime() {
+      return inTime;
     }
-    public String getCompany() {
-      return company;
+    public LocalDateTime getOutTime() {
+      return outTime;
     }
-    public void setCompany(String company) {
-      this.company = company;
+    public void setCarNo(String carNo) {
+      this.carNo = carNo;
     }
-    public String getAuthor() {
-      return author;
-    } 
-    public void setAuthor(String author) {
-      this.author = author;
+    public void setCarType(int carType) {
+      this.carType = carType;
     }
-    public String getRentAble() {
-      return rentAble;
+    public void setParkedLocation(int parkedLocation) {
+      this.parkedLocation = parkedLocation;
     }
-    public void setRentAble(String rentAble) {
-      this.rentAble = rentAble;
+    public void setInTime() {
+      this.inTime = now;
     }
-    public Date getRentDate() {
-      return rentDate;
-    }
-    public void setRentDate(Date rentDate) {
-      this.rentDate = rentDate;
-    }
-    public String getRentOwner() {
-      return rentOwner;
-    }
-    public void setRentOwner(String rentOwner) {
-      this.rentOwner = rentOwner;
+    public void setOutTime() {
+      this.outTime = now;
     }
   }
   
