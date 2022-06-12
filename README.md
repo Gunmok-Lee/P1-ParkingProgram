@@ -19,3 +19,9 @@
 - Member class 구성
 - Date type -> Time type으로 변경
 
+## Day-3
+
+- Handler 추가
+- admin 추가
+- Prompt 추가
+
